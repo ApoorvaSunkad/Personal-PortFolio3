@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <p>Apoorva Sunkad</p>
+                <ul id="sideMenu">
+                    <li><a href="https://home-e95.pages.dev/">Home</a></li>
+                    <li><a href="https://about-1i9.pages.dev/">About</a></li>
+                    <li><a href="https://skills-5ay.pages.dev/">Skills</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                    <i class="fa-sharp fa-solid fa-square-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title" id="mypro">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>What's the Weather?</h2>
+                    <p>This website shows the real time weather of all the countries and states. 
+                        <br>Built using HTML, CSS, JavaScript and Open weather API.</p>
+                    <a href="https://github.com/ApoorvaSunkad/WeatherApp.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>Simple Calculator</h2>
+                    <p>A simple calculator to calculate basic arithmetic opertions. 
+                        <br>Built using HTML, CSS, JavaScript.</p>
+                    <a href="https://github.com/ApoorvaSunkad/BuildingCalculator.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Tic-Tac-Toe Game</h2>
+                    <p>A simple Game which reminds me of my childhood. 
+                        <br>Built using HTML, CSS, JavaScript.</p>
+                    <a href="https://github.com/ApoorvaSunkad/TicTacToe-Game-.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h2>Recipe Geneartor App</h2>
+                    <p>Built a website which will incorporate a food recipe API allowing to fetch and 
+                        display real-time recipe data. 
+                        <br>Built using HTML, CSS, JavaScript and The Meal DB API.</p>
+                    <a href="https://github.com/ApoorvaSunkad/RecipeGenerator.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h2>Currency Convertor</h2>
+                    <p>A simple website to convert the desired amount from currency to another. 
+                        <br>Built using HTML, CSS, JavaScript, Flags API and Currency API.</p>
+                    <a href="https://github.com/ApoorvaSunkad/CurrencyConvertor.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Rock, Paper, Scissors</h2>
+                    <p>Rock, paper, scissors is an intransitive hand game, usually played between two people. 
+                        <br>Built using HTML, CSS, JavaScript.</p>
+                    <a href="https://github.com/ApoorvaSunkad/Rock-Paper-Scissors.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright  &copy; Apoorva Sunkad. Made with <i class="fa-solid fa-heart"></i> by Apoorva Sunkad</p>
+    </div>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e6a8f5195c.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script>
+        const sidemenu = document.getElementById("sideMenu");
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
