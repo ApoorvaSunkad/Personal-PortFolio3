@@ -71,7 +71,7 @@ nav ul li a:hover::after{
         opacity: 1;
         transform: translateX(0);
     }
-  }
+}
 .project-list div{
     background: #262626;
     padding: 20px;
@@ -113,10 +113,15 @@ nav ul li a:hover::after{
 #mypro{
     text-align: center;
 }
+.visit{
+    margin: 15px;
+    display: inline;
+    font-family: "Mukta", sans-serif;
+    font-size: 12px;
+}
 
 /* Footer */
 .copyright{
-    /* width: 100%; */
     text-align: center;
     padding: 25px 0;
     background: rgb(93, 90, 90);
@@ -144,7 +149,19 @@ nav .fa-solid{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 50px;
+        animation: slideformleft 1s ease forwards;
     }
+    @keyframes slideformleft {
+        0%{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
     .project-list div p{
         font-size: 16px;
     }
